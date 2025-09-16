@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0; /* Menghapus margin default semua elemen */
+    padding: 0; /* Menghapus padding default semua elemen */
+    box-sizing: border-box; /* Menghitung lebar & tinggi elemen termasuk padding & border */
+    font-family: Arial, sans-serif; /* Font global default Arial */
+}
+
+/* Body */
+body {
+    background: #FFEBaf; /* Warna latar Vanilla */
+    color: #333; /* Warna teks abu tua agar mudah dibaca */
+    line-height: 1.6; /* Jarak antar baris agar teks lebih nyaman */
+}
+
+/* Header */
+header {
+    background: #4C9DB0; /* Warna biru Moonstone */
+    color: white; /* Warna teks putih di header */
+    text-align: center; /* Semua isi header rata tengah */
+    padding: 60px 20px 40px; /* Ruang dalam (atas 60px, kanan & kiri 20px, bawah 40px) */
+}
+
+header .profile img {
+    width: 100px; /* Lebar foto profil */
+    height: 100px; /* Tinggi foto profil */
+    border-radius: 50%; /* Membuat foto profil jadi bulat */
+    border: 4px solid white; /* Memberi garis putih di sekeliling foto */
+    margin-bottom: 15px; /* Jarak bawah foto ke teks */
+}
+
+header h1 {
+    font-size: 26px; /* Ukuran teks nama utama */
+    margin-bottom: 5px; /* Jarak ke teks berikutnya */
+}
+
+header p {
+    font-size: 16px; /* Ukuran teks subjudul */
+    opacity: 0.9; /* Membuat teks sedikit transparan */
+}
+
+/* Section Umum */
+section {
+    max-width: 1000px; /* Lebar maksimum konten */
+    margin: 50px auto; /* Memberi jarak 50px atas & bawah, auto untuk center */
+    padding: 0 20px; /* Padding samping kiri & kanan 20px */
+    text-align: center; /* Isi section rata tengah secara default */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Jarak judul ke bawah */
+    font-size: 24px; /* Ukuran judul section */
+    color: #4C9DB0; /* Warna biru Moonstone */
+}
+
+/* About */
+.about p {
+    font-size: 16px; /* Ukuran teks About */
+    color: #444; /* Warna teks abu lebih gelap */
+}
+
+/* Card Container */
+.card-container {
+    display: grid; /* Menggunakan CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    /* Membuat grid otomatis menyesuaikan jumlah kolom, 
+       dengan lebar minimum 250px, sisanya membesar */
+    gap: 20px; /* Jarak antar kartu */
+    margin-top: 20px; /* Jarak atas dari elemen sebelumnya */
+}
+
+.card {
+    background: white; /* Latar belakang kartu putih */
+    padding: 20px; /* Ruang dalam 20px */
+    border-radius: 12px; /* Sudut kartu membulat */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Bayangan halus */
+    text-align: center; /* Isi dalam kartu rata tengah */
+    transition: transform 0.2s ease-in-out; /* Efek animasi saat hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Kartu naik sedikit saat dihover */
+}
+
+.card img {
+    width: 100%; /* Gambar memenuhi lebar kartu */
+    border-radius: 8px; /* Sudut gambar sedikit membulat */
+    margin-bottom: 15px; /* Jarak gambar dengan teks */
+}
+
+.card i {
+    font-size: 40px; /* Ukuran ikon besar */
+    color: #4C9DB0; /* Warna biru Moonstone */
+    margin-bottom: 15px; /* Jarak ikon dengan judul */
+}
+
+.card h3 {
+    margin-bottom: 10px; /* Jarak judul dengan deskripsi */
+    font-size: 18px; /* Ukuran judul kartu */
+    color: #222; /* Warna hitam keabu-abuan */
+}
+
+.card p {
+    font-size: 14px; /* Ukuran teks deskripsi */
+    color: #555; /* Warna abu medium */
+}
+
+/* Contact */
+.contact {
+    text-align: left; /* Override: isi kontak rata kiri */
+}
+
+.contact h2 {
+    text-align: center; /* Judul "Kontak" tetap rata tengah */
+    margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+.contact ul {
+    list-style: none; /* Hilangkan bullet (titik) default pada daftar */
+    padding: 0; /* Hilangkan padding default ul */
+    max-width: 600px; /* Batasi lebar maksimum daftar */
+    margin: 0 auto; /* Tetap center di halaman, tapi teks di dalamnya rata kiri */
+}
+
+.contact ul li {
+    margin: 10px 0; /* Jarak antar item */
+    font-size: 16px; /* Ukuran teks kontak */
+    color: #444; /* Warna teks abu tua */
+    display: flex; /* Membuat ikon & teks sejajar horizontal */
+    align-items: center; /* Menyelaraskan ikon & teks secara vertikal */
+}
+
+.contact i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    color: #4C9DB0; /* Warna ikon biru Moonstone */
+    min-width: 20px; /* Semua ikon punya lebar minimum yang sama agar rata */
+}
+
+/* Footer */
+footer {
+    background: #4C9DB0; /* Warna biru Moonstone */
+    color: white; /* Warna teks putih */
+    text-align: center; /* Isi footer rata tengah */
+    padding: 15px; /* Ruang dalam 15px */
+    margin-top: 40px; /* Jarak atas dari section sebelumnya */
+    font-size: 14px; /* Ukuran teks footer lebih kecil */
+}
